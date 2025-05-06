@@ -14,7 +14,9 @@ export default function NotFound() {
             Page not found
           </Text>
         </div>
-        <Button href="/" target="_self">Return home</Button>
+        <Button href="/" target="_self">
+          Return home
+        </Button>
       </div>
     </Container>
   );

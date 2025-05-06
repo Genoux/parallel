@@ -19,19 +19,19 @@ function TextTransition({ children }: PropsWithChildren) {
   return (
     <div
       className={cn(
-        "text-transition overflow-hidden flex-row gap-1.5 relative whitespace-normal flex",
+        'text-transition overflow-hidden flex-row gap-1.5 relative whitespace-normal flex',
         height
       )}
     >
       <AnimatePresence mode="wait" initial={false}>
         <motion.div
           key={children?.toString()}
-          initial={{ opacity: 0, y: "50%" }}
+          initial={{ opacity: 0, y: '50%' }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: "-50%" }}
+          exit={{ opacity: 0, y: '-50%' }}
           transition={{
             duration: 0.2,
-            ease: "easeInOut",
+            ease: 'easeInOut',
           }}
         >
           <div ref={currentRef}>

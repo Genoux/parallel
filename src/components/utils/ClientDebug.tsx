@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { LayoutDebugTool, ClientProvider } from "@realgenoux/layout-debug-tool";
+import { LayoutDebugTool, ClientProvider } from '@realgenoux/layout-debug-tool';
 
 export function ClientDebug({ children }: { children: React.ReactNode }) {
-  const isDevelopment = process.env.NODE_ENV === "development";
+  const isDevelopment = process.env.NODE_ENV === 'development';
 
   if (!isDevelopment) {
     return <>{children}</>;

@@ -1,13 +1,14 @@
-"use client";
-import Container from "@/components/atoms/layout/Container";
-import Cities from "@/components/organisms/sections/CitiesSection";
-import WebsitesSection from "@/components/organisms/sections/WebsitesSection";
-import HeroSection from "@/components/organisms/sections/HeroSection";
-import Divider from "@/components/atoms/ui/Divider";
-import Text from "@/components/atoms/typography/Text";
-import { motion } from "motion/react";
-import { useScrollLock } from "@/hooks/useScrollLock";
-import { useState, useEffect } from "react";
+'use client';
+
+import Container from '@/components/atoms/layout/Container';
+import Cities from '@/components/organisms/sections/CitiesSection';
+import WebsitesSection from '@/components/organisms/sections/WebsitesSection';
+import HeroSection from '@/components/organisms/sections/HeroSection';
+import Divider from '@/components/atoms/ui/Divider';
+import Text from '@/components/atoms/typography/Text';
+import { motion } from 'motion/react';
+import { useScrollLock } from '@/hooks/useScrollLock';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
   const [isLocked, setIsLocked] = useState(true);
@@ -31,7 +32,7 @@ export default function Home() {
           ease: [0.34, 1.56, 0.64, 1],
           delay: 0.5,
           duration: 1.5,
-        }
+        },
       }}
       onAnimationComplete={() => {
         setIsLocked(false);

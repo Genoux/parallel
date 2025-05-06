@@ -1,43 +1,43 @@
-"use client";
+'use client';
 
-import Card from "@/components/molecules/Card";
+import Card from '@/components/molecules/Card';
 
 const cards = [
   {
-    title: "inBeat Agency",
-    subtitle: "Content marketing",
-    bg: "bg-[#FB4F07]",
-    buttonHref: "https://inbeat.agency",
+    title: 'inBeat Agency',
+    subtitle: 'Content marketing',
+    bg: 'bg-[#FB4F07]',
+    buttonHref: 'https://inbeat.agency',
   },
   {
-    title: "Bluethings",
-    subtitle: "SEO & link building",
-    bg: "bg-[#A497FB]",
-    buttonHref: "https://bluethings.co",
+    title: 'Bluethings',
+    subtitle: 'SEO & link building',
+    bg: 'bg-[#A497FB]',
+    buttonHref: 'https://bluethings.co',
   },
   {
-    title: "Content Allies",
-    subtitle: "Podcast production",
-    bg: "bg-[#89A090]",
-    buttonHref: "https://contentallies.com",
+    title: 'Content Allies',
+    subtitle: 'Podcast production',
+    bg: 'bg-[#89A090]',
+    buttonHref: 'https://contentallies.com',
   },
   {
-    title: "AAG/H",
-    subtitle: "Recruitment service",
-    bg: "bg-[#D6D0C7]",
-    buttonHref: "https://aagh.health",
+    title: 'AAG/H',
+    subtitle: 'Recruitment service',
+    bg: 'bg-[#D6D0C7]',
+    buttonHref: 'https://aagh.health',
   },
   {
-    title: "Showcase",
-    subtitle: "Content software",
-    bg: "bg-[#815A5E]",
-    buttonHref: "https://showca.se",
+    title: 'Showcase',
+    subtitle: 'Content software',
+    bg: 'bg-[#815A5E]',
+    buttonHref: 'https://showca.se',
   },
   {
-    title: "Growthnotes",
-    subtitle: "Media",
-    bg: "bg-[#F2D0E0]",
-    buttonHref: "https://growthnotes.news",
+    title: 'Growthnotes',
+    subtitle: 'Media',
+    bg: 'bg-[#F2D0E0]',
+    buttonHref: 'https://growthnotes.news',
   },
 ];
 

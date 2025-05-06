@@ -1,19 +1,20 @@
-"use client";
+'use client';
+
 import { useState, useEffect, useRef } from 'react';
 import TextTransition from '@/components/utils/TextTransition';
-import Text from "@/components/atoms/typography/Text";
+import Text from '@/components/atoms/typography/Text';
 
 const cities = [
-  "Montreal",
-  "Denver",
-  "Johannesburg",
-  "Mexico City",
-  "Amsterdam",
-  "Paris",
-  "Prague",
-  "Buenos Aires",
-  "Cape Town",
-  "São Paulo",
+  'Montreal',
+  'Denver',
+  'Johannesburg',
+  'Mexico City',
+  'Amsterdam',
+  'Paris',
+  'Prague',
+  'Buenos Aires',
+  'Cape Town',
+  'São Paulo',
 ];
 
 export default function Cities() {
@@ -21,10 +22,7 @@ export default function Cities() {
   const intervalRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   useEffect(() => {
-    intervalRef.current = setInterval(
-      () => setIndex((index) => (index + 1) % cities.length),
-      1100,
-    );
+    intervalRef.current = setInterval(() => setIndex((index) => (index + 1) % cities.length), 1100);
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
@@ -39,10 +37,7 @@ export default function Cities() {
   };
 
   const handleMouseLeave = () => {
-    intervalRef.current = setInterval(
-      () => setIndex((index) => (index + 1) % cities.length),
-      1100,
-    );
+    intervalRef.current = setInterval(() => setIndex((index) => (index + 1) % cities.length), 1100);
   };
 
   return (
@@ -51,13 +46,8 @@ export default function Cities() {
         <Text className="text-start pl-0.5" tag="h2">
           Our teams work from
         </Text>
-        <div 
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <TextTransition>
-            {cities[index]}
-          </TextTransition>
+        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <TextTransition>{cities[index]}</TextTransition>
         </div>
       </div>
     </div>
