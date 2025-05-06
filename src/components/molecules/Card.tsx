@@ -68,8 +68,8 @@ const Card: React.FC<CardProps> = ({
         onClick={() => window.open(buttonHref, "_blank")}
       >
         <div>
-          <Text size="medium">{title}</Text>
-          <Text size="medium" variant="muted">{subtitle}</Text>
+          <Text size="medium" tag="h3">{title}</Text>
+          <Text size="medium" variant="muted" tag="h4">{subtitle}</Text>
         </div>
         <Button href={buttonHref}>Website</Button>
       </motion.div>

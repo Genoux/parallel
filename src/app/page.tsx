@@ -23,9 +23,9 @@ export default function Home() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 100, rotate: Math.random() * 10 - 5 }}
-      animate={{ 
-        opacity: 1, 
-        y: 0, 
+      animate={{
+        opacity: 1,
+        y: 0,
         rotate: 0,
         transition: {
           ease: [0.34, 1.56, 0.64, 1],
@@ -45,7 +45,7 @@ export default function Home() {
         </section>
         <Divider />
         <section className="flex flex-col gap-6 sm:gap-8 max-w-[300px] md:max-w-[500px] pb-12">
-          <Text size="large">
+          <Text size="large" tag="h2">
             {`Parallel's official brand & website is in progress`}
           </Text>
         </section>

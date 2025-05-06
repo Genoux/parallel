@@ -48,7 +48,7 @@ export default function Cities() {
   return (
     <div className="space-y-4 w-fit cursor-default">
       <div className="flex flex-row justify-start items-start gap-1">
-        <Text className="text-start pl-0.5">
+        <Text className="text-start pl-0.5" tag="h2">
           Our teams work from
         </Text>
         <div 
