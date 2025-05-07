@@ -16,11 +16,14 @@ export default function Home() {
   useScrollLock(isLocked);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+    
     setIsLocked(true);
     return () => {
       setIsLocked(false);
     };
   }, []);
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 100, rotate: Math.random() * 10 - 5 }}
@@ -29,9 +32,9 @@ export default function Home() {
         y: 0,
         rotate: 0,
         transition: {
-          ease: [0.34, 1.56, 0.64, 1],
+          ease: [0.30, 1.4, 0.2, 1],
           delay: 0.5,
-          duration: 1.5,
+          duration: 1.4,
         },
       }}
       onAnimationComplete={() => {
