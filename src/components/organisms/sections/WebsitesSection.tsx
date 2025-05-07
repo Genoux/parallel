@@ -25,7 +25,7 @@ const cards = [
     title: 'AAG/H',
     subtitle: 'Recruitment service',
     bg: 'bg-[#D6D0C7]',
-    buttonHref: 'https://aagh.health',
+    buttonHref: 'https://aag.health',
   },
   {
     title: 'Showcase',
